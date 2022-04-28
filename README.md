@@ -1,3 +1,5 @@
 ## Django-Project
 
-A simple project for a Django blog website. More functionality will be added later. 
+A simple project for a Django blog website for learning Django. Following Corey Schafer's tutorial on Youtube.
+
+More functionality will be added later. 
