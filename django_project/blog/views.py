@@ -29,7 +29,7 @@ class UserPostListView(ListView):
         user = get_object_or_404(User, username=self.kwargs.get('username'))
         return Post.objects.filter(author=user).order_by('-date_posted')
 
-class PostDetailView(DetailView):
+class PostDetailView():
     model = Post
 
 class PostCreateView(LoginRequiredMixin, CreateView):
