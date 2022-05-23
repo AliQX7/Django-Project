@@ -17,6 +17,7 @@ def register(request):
         form = UserRegistrationForm()
     return render(request, 'users/register.html', {'form': form})
 
+# View for serving the main profile page for a user. Requires login to be served. 
 @login_required
 def profile(request):
     if request.method == 'POST':
