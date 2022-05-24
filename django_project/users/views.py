@@ -5,6 +5,7 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from .forms import UserRegistrationForm, UserUpdateForm, ProfileUpdateForm
 
+# View for serving a new user the registration page and form.
 def register(request):
     if request.method == 'POST':
         form = UserRegistrationForm(request.POST)
