@@ -12,7 +12,7 @@ def home(request):
     }
     return render(request, 'blog/home.html', context)
 
-
+# View to list all posts ordered by the date posted.
 class PostListView(ListView):
     model = Post
     template_name = 'blog/home.html'
