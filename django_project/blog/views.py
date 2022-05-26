@@ -35,6 +35,7 @@ class UserPostListView(ListView):
 class PostDetailView(DetailView):
     model = Post
 
+# View for creataing new posts, requires a user to be logged in. 
 class PostCreateView(LoginRequiredMixin, CreateView):
     model = Post
     fields = ['title', 'content']
