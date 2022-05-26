@@ -31,6 +31,7 @@ class UserPostListView(ListView):
         user = get_object_or_404(User, username=self.kwargs.get('username'))
         return Post.objects.filter(author=user).order_by('-date_posted')
 
+# View to show the complete details of a post.
 class PostDetailView(DetailView):
     model = Post
 
