@@ -5,6 +5,8 @@ from django.contrib.auth.models import User
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from .models import Post
 
+# We use generic Django views here to provide a basis for our own views and extend them. 
+
 # To render the main home page of the app. 
 def home(request):
     context = {
