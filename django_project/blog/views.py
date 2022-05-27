@@ -70,5 +70,6 @@ class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
             return True
         return False
 
+# To render the about page of the app. 
 def about(request):
     return render(request, 'blog/about.html', {'title': 'About'})
